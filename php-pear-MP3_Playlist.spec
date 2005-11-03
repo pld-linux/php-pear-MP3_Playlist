@@ -15,8 +15,12 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}alpha1.tgz
 # Source0-md5:	1a577763fb278b411ae73b6e5a140271
 URL:		http://pear.php.net/package/MP3_Playlist/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:5.0.0
 Requires:	php-pear
+Requires:	php-pear-Net_URL >= 1.0.14
+Requires:	php-pear-PEAR >= 1:1.3.0
 BuildArch:	noarch
+Requires:	php-pear-MP3_Id >= 1.1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,8 +34,8 @@ In PEAR status of this package is: %{_status}.
 
 %description -l pl
 MP3_Playlist jest bibliotek± PHP u³atwiaj±c± tworzenie i rozszerzanie
-list utworów MP3. Skanuje lokalne foldery w poszukiwaniu plików MP3 
-i zwraca listy utworów w ró¿nych formatach, w³±czaj±c w to M3U, SMIL,
+list utworów MP3. Skanuje lokalne foldery w poszukiwaniu plików MP3 i
+zwraca listy utworów w ró¿nych formatach, w³±czaj±c w to M3U, SMIL,
 XML, XHTML z mo¿liwo¶ci± tworzenia kopii list w bazie SQLite.
 
 Ta klasa ma w PEAR status: %{_status}.
