@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}alpha1.tgz
 # Source0-md5:	1a577763fb278b411ae73b6e5a140271
 URL:		http://pear.php.net/package/MP3_Playlist/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:5.0.0
 Requires:	php-pear
