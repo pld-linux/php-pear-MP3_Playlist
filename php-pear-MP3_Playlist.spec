@@ -7,22 +7,23 @@
 Summary:	%{_pearname} - create MP3 playlists on the fly
 Summary(pl):	%{_pearname} - tworzenie list utworów MP3 w locie
 Name:		php-pear-%{_pearname}
-Version:	0.5.0
-Release:	2
+Version:	0.5.1
+Release:	1
+Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}alpha1.tgz
-# Source0-md5:	1a577763fb278b411ae73b6e5a140271
+# Source0-md5:	5eab4294f35c79b4d1046d1d13d9ddfc
 URL:		http://pear.php.net/package/MP3_Playlist/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:5.0.0
 Requires:	php-pear
+Requires:	php-pear-MP3_Id >= 1.1.4
 Requires:	php-pear-Net_URL >= 1.0.14
 Requires:	php-pear-PEAR-core >= 1:1.3.0
 BuildArch:	noarch
-Requires:	php-pear-MP3_Id >= 1.1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,6 +43,20 @@ XML, XHTML z mo¿liwo¶ci± tworzenia kopii list w bazie SQLite.
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+Requires:	%{name} = %{epoch}:%{version}-%{release}
+AutoReq:	no
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -55,7 +70,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log
-%doc docs/%{_pearname}/docs/*
+%doc install.log docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/*
