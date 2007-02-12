@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - create MP3 playlists on the fly
-Summary(pl):	%{_pearname} - tworzenie list utworów MP3 w locie
+Summary(pl.UTF-8):   %{_pearname} - tworzenie list utworÃ³w MP3 w locie
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
@@ -35,17 +35,17 @@ lists on the fly with an SQLite DB.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-MP3_Playlist jest bibliotek± PHP u³atwiaj±c± tworzenie i rozszerzanie
-list utworów MP3. Skanuje lokalne foldery w poszukiwaniu plików MP3 i
-zwraca listy utworów w ró¿nych formatach, w³±czaj±c w to M3U, SMIL,
-XML, XHTML z mo¿liwo¶ci± tworzenia kopii list w bazie SQLite.
+%description -l pl.UTF-8
+MP3_Playlist jest bibliotekÄ… PHP uÅ‚atwiajÄ…cÄ… tworzenie i rozszerzanie
+list utworÃ³w MP3. Skanuje lokalne foldery w poszukiwaniu plikÃ³w MP3 i
+zwraca listy utworÃ³w w rÃ³Å¼nych formatach, wÅ‚Ä…czajÄ…c w to M3U, SMIL,
+XML, XHTML z moÅ¼liwoÅ›ciÄ… tworzenia kopii list w bazie SQLite.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -54,7 +54,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
