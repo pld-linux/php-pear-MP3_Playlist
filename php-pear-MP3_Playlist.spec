@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - create MP3 playlists on the fly
-Summary(pl.UTF-8):   %{_pearname} - tworzenie list utworów MP3 w locie
+Summary(pl.UTF-8):	%{_pearname} - tworzenie list utworów MP3 w locie
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
@@ -45,7 +45,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
