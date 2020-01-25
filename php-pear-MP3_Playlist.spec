@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	MP3_Playlist
 Summary:	%{_pearname} - create MP3 playlists on the fly
