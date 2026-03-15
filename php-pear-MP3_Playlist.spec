@@ -4,7 +4,7 @@ Summary:	%{_pearname} - create MP3 playlists on the fly
 Summary(pl.UTF-8):	%{_pearname} - tworzenie list utworów MP3 w locie
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
